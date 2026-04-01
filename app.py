@@ -31,7 +31,7 @@ button[data-baseweb="tab"] {
 
 /* FIX: Tab text styling */
 button[data-baseweb="tab"] > div {
-    font-size: 25px !important;
+    font-size: 35px !important;
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -57,6 +57,33 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+st.markdown("""
+<style>
+
+/* KPI container */
+[data-testid="stMetric"] {
+    background-color: #111827;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #1f2937;
+}
+
+/* KPI label (title) */
+[data-testid="stMetricLabel"] {
+    font-size: 30px !important;
+    font-weight: 600;
+}
+
+/* KPI value (number) */
+[data-testid="stMetricValue"] {
+    font-size: 32px !important;
+    font-weight: 700;
+    color: #22c55e;
+}
+
+</style>
+""", unsafe_allow_html=True)
 # =========================================
 # 🔄 CACHE DATA
 # =========================================
@@ -87,10 +114,10 @@ def show_kpis():
 
         col1, col2, col3, col4 = st.columns(4)
 
-        col1.metric("## 💳 Total", f"{total:,}")
-        col2.metric("## 🚨 Fraud", f"{fraud:,}")
-        col3.metric("## 📊 Fraud %", f"{fraud_pct:.2f}%")
-        col4.metric("## 💰 Amount", f"{amount:,.2f}")
+        col1.metric(" 💳 Total", f"{total:,}")
+        col2.metric("🚨 Fraud", f"{fraud:,}")
+        col3.metric("📊 Fraud %", f"{fraud_pct:.2f}%")
+        col4.metric("💰 Amount", f"{amount:,.2f}")
 
         return fraud_pct, amount
 
@@ -129,7 +156,7 @@ queries = {
 # =========================================
 # 🧭 TABS
 # =========================================
-tab1, tab2, tab3 = st.tabs(["### 📊 Summary", "### 🤖 ML Prediction", "### 📈 Dashboard"])
+tab1, tab2, tab3 = st.tabs(["📊 Summary", "🤖 ML Prediction", "📈 Dashboard"])
 
 class show_insights:
     def __init__(self, fraud_pct, amount):
@@ -155,7 +182,7 @@ with tab1:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.markdown("### 🧠 Insights")
+        st.markdown("🧠 Insights")
 
         if fraud_pct > 0.5:
             st.error("🚨 High fraud rate detected → Immediate action required")
@@ -170,7 +197,7 @@ with tab1:
         st.write("3. Fraud patterns indicate potential automated attacks")
 
     with col2:
-        st.markdown("### 🏦 Business Value")
+        st.markdown("🏦 Business Value")
 
         st.write("I. Prevent financial losses from fraudulent transactions")
         st.write("II. Improve customer trust and security")
@@ -238,7 +265,7 @@ with tab2:
         col1, col2 = st.columns(2)
 
         with col1:
-            st.markdown("### Model Prediction Insights")
+            st.markdown("Model Prediction Insights")
 
             if prob >= threshold:
                 st.error("🚨 High-risk transaction detected")
@@ -253,7 +280,7 @@ with tab2:
             st.write("📌 Model detects hidden fraud patterns using ML")
 
         with col2:
-            st.markdown("### 🏦 Business Value")
+            st.markdown("🏦 Business Value")
 
             st.write("✔️ Real-time fraud detection")
             st.write("✔️ Prevent financial loss before transaction completes")
