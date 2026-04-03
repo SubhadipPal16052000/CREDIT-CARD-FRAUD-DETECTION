@@ -12,7 +12,7 @@ from utils import load_data, load_features, load_threshold, predict, run_query
 # =========================================
 # ⚙️ CONFIG
 # =========================================
-st.set_page_config(page_title="Fraud Detection", layout="wide")
+st.set_page_config(page_title="Transactional Fraud Detection", layout="wide")
 
 st.markdown("""
 <style>
@@ -31,7 +31,7 @@ button[data-baseweb="tab"] {
 
 /* FIX: Tab text styling */
 button[data-baseweb="tab"] > div {
-    font-size: 35px !important;
+    font-size: 30px !important;
     font-weight: 700;
     width: 100%;
     text-align: center;
@@ -53,7 +53,7 @@ button[data-baseweb="tab"]:hover {
 
 # Centered title
 st.markdown(
-    "<h1 style='text-align: center;'>💳 Credit Card Fraud Detection System</h1>",
+    "<h1 style='text-align: center;'>💳 Transactional Fraud Detection System</h1>",
     unsafe_allow_html=True
 )
 
@@ -293,7 +293,7 @@ with tab2:
 # =========================================
 with tab3:
     st.header("📈 Power BI Dashboard")
-    st.info("Credit Card Fraud Detection Power BI Dashboard made by Subhadip")
+    st.info("Transactional Fraud Detection Power BI Dashboard made by Subhadip")
 
     power_bi_url = "https://app.powerbi.com/view?r=eyJrIjoiYzRmMDZmNTYtMTYxYi00ZDE4LWEzNjktYjdkMDJmM2Y5NWNkIiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9"
     st.components.v1.iframe(power_bi_url, height=700)
