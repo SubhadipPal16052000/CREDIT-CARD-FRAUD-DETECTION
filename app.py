@@ -297,3 +297,5 @@ with tab3:
 
     power_bi_url = "https://app.powerbi.com/view?r=eyJrIjoiYzRmMDZmNTYtMTYxYi00ZDE4LWEzNjktYjdkMDJmM2Y5NWNkIiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9"
     st.components.v1.iframe(power_bi_url, height=700)
+
+#"https://app.powerbi.com/view?r=eyJrIjoiYzRmMDZmNTYtMTYxYi00ZDE4LWEzNjktYjdkMDJmM2Y5NWNkIiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9"
