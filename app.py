@@ -295,7 +295,8 @@ with tab3:
     st.header("📈 Power BI Dashboard")
     st.info("Transactional Fraud Detection Power BI Dashboard made by Subhadip")
 
-    power_bi_url = "https://app.powerbi.com/reportEmbed?reportId=9b29511c-05dc-4493-9b05-0c14b68aa283&autoAuth=true&ctid=9a99326a-9bf4-4f05-82af-ed5c096a2459"
+    power_bi_url = "https://app.powerbi.com/view?r=eyJrIjoiYzRmMDZmNTYtMTYxYi00ZDE4LWEzNjktYjdkMDJmM2Y5NWNkIiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9"
     st.components.v1.iframe(power_bi_url, height=700)
 
 #"https://app.powerbi.com/view?r=eyJrIjoiYzRmMDZmNTYtMTYxYi00ZDE4LWEzNjktYjdkMDJmM2Y5NWNkIiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9"
+# https://app.powerbi.com/view?r=eyJrIjoiYzRmMDZmNTYtMTYxYi00ZDE4LWEzNjktYjdkMDJmM2Y5NWNkIiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9
