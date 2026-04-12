@@ -178,7 +178,7 @@ https://credit-card-fraud-detection-yjkbqvthtpkambdbaekovf.streamlit.app/
 - 📊 Power BI Dashboard
 https://app.powerbi.com/view?r=eyJrIjoiYTAzYjE5MjAtZmVlZC00OTg0LThjNGItZDU1ZGMyYzZjNjI0IiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9&pageName=7e36062a4875fee878bd
 
-## 💼 Resume Highlight
+## 💼 Highlight
 
 Built an end-to-end fraud detection system using Machine Learning, PostgreSQL, and Streamlit with real-time prediction, SQL analytics, and dashboard visualization.
 
