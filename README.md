@@ -1,8 +1,8 @@
 # 💳 Transactional Fraud Detection System
 
-![](image_cover.jpg)
-![](image_cover.jpg)
-![](image_cover.jpg)
+![](summary.png)
+![](ml_prediction.png)
+![](dashboard.png)
 
 > 🚀 End-to-end Machine Learning + Data Engineering + Analytics project developed at **Infyntrek Systèmes** for real-time fraud detection and business insights.
 
@@ -24,8 +24,15 @@ This project builds a **complete fraud detection system** that:
 
 ## 🎯 Problem Statement
 
-Fraudulent transactions are hidden within millions of legitimate ones. The key challenges are:
+Financial fraud is a multi-billion dollar problem that erodes customer trust and causes 
+significant losses for companies. The challenge is to distinguish fraudulent transactions from 
+legitimate ones, which are often hidden within millions of daily transactions. This project 
+involves analyzing a historical dataset of financial transactions to identify patterns and 
+characteristics of fraud. The outcome will be an analytical report and a baseline predictive 
+model that can help in flagging suspicious activities in real-time, thereby protecting the 
+company's and its customers' assets. 
 
+The key challenges are:
 - Handling highly **imbalanced datasets**  
 - Minimizing **false negatives (missed fraud cases)**  
 - Enabling **real-time fraud detection systems**  
@@ -170,3 +177,11 @@ streamlit run app.py
 https://credit-card-fraud-detection-yjkbqvthtpkambdbaekovf.streamlit.app/
 - 📊 Power BI Dashboard
 https://app.powerbi.com/view?r=eyJrIjoiYTAzYjE5MjAtZmVlZC00OTg0LThjNGItZDU1ZGMyYzZjNjI0IiwidCI6IjlhOTkzMjZhLTliZjQtNGYwNS04MmFmLWVkNWMwOTZhMjQ1OSJ9&pageName=7e36062a4875fee878bd
+
+## 💼 Resume Highlight
+
+Built an end-to-end fraud detection system using Machine Learning, PostgreSQL, and Streamlit with real-time prediction, SQL analytics, and dashboard visualization.
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub!
